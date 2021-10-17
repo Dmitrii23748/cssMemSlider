@@ -40,7 +40,7 @@
 }
 
 .navigation label {
-    display: inline-block;
+
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -49,9 +49,7 @@
   margin: 10px;
   transition: 0.5s;
 }
-.navigation a {
-    display: inline-block;
-}
+
 
 .inner-slider__wrapper {
   min-width: 500%;
@@ -122,26 +120,29 @@
 #rn2 ~ .container .navigation .b2,
 #rn3 ~ .container .navigation .b3,
 #rn4 ~ .container .navigation .b4 {
-  background: rgb(241, 13, 13);
+  background-color: rgb(241, 13, 13);
+}
+#rn1 ~ .container .navigation .b1:active,
+#rn2 ~ .container .navigation .b2:active,
+#rn3 ~ .container .navigation .b3:active,
+#rn4 ~ .container .navigation .b4:active {
+  background-color: rgb(241, 13, 13);
 }
 #rn1 ~ .container .navigation .b1:hover,
 #rn2 ~ .container .navigation .b2:hover,
 #rn3 ~ .container .navigation .b3:hover,
 #rn4 ~ .container .navigation .b4:hover {
   background-color: rgb(12, 12, 12);
+  border-color: rgb(12, 12, 12);
 }
 #rn1:checked ~ .container .navigation .b1,
 #rn2:checked ~ .container .navigation .b2,
 #rn3:checked ~ .container .navigation .b3,
 #rn4:checked ~ .container .navigation .b4 {
   background: transparent;
-}
-.bar:active {
   border-color: rgb(241, 13, 13);
 }
-.bar:hover {
-  border-color: black;
-}
+
 
 .text__wrapper-block {
   max-width: 100%;
