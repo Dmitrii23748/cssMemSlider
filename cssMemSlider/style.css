@@ -40,7 +40,6 @@
 }
 
 .navigation label {
-
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -141,6 +140,13 @@
 #rn4:checked ~ .container .navigation .b4 {
   background: transparent;
   border-color: rgb(241, 13, 13);
+}
+#rn1:checked ~ .container .navigation .b1:hover,
+#rn2:checked ~ .container .navigation .b2:hover,
+#rn3:checked ~ .container .navigation .b3:hover,
+#rn4:checked ~ .container .navigation .b4 :hover{
+  background: transparent;
+  border-color: rgb(12, 12, 12);
 }
 
 
