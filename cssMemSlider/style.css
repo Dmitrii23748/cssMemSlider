@@ -46,6 +46,7 @@
   border: solid rgb(241, 13, 13) 2px;
   cursor: pointer;
   margin: 10px;
+  background-color: rgb(241, 13, 13);
   transition: 0.5s;
 }
 
@@ -114,13 +115,6 @@
   margin-left: -80%;
 }
 
-#rn1 ~ .container .navigation .b1,
-#rn2 ~ .container .navigation .b2,
-#rn3 ~ .container .navigation .b3,
-#rn4 ~ .container .navigation .b4 {
-  background-color: rgb(241, 13, 13);
-}
-
 #rn1 ~ .container .navigation .b1:hover,
 #rn2 ~ .container .navigation .b2:hover,
 #rn3 ~ .container .navigation .b3:hover,
@@ -136,16 +130,13 @@
   background: transparent;
   border-color: rgb(241, 13, 13);
 }
+
 #rn1:checked ~ .container .navigation .b1:hover,
 #rn2:checked ~ .container .navigation .b2:hover,
 #rn3:checked ~ .container .navigation .b3:hover,
 #rn4:checked ~ .container .navigation .b4:hover {
-  background: transparent;
   border-color: rgb(12, 12, 12);
 }
-
-
-
 
 .text__wrapper-block {
   max-width: 100%;
@@ -162,6 +153,14 @@
   width: 20%;
   transition: 0.5s;
 }
+@media (max-width: 768px) {
+  #rn1:checked ~ .container .navigation .b1:hover,
+  #rn2:checked ~ .container .navigation .b2:hover,
+  #rn3:checked ~ .container .navigation .b3:hover,
+  #rn4:checked ~ .container .navigation .b4:hover {
+    border-color: rgb(241, 13, 13);
+  }
+}
 
 @media (max-width: 420px) {
   .slider__wrapper-block {
@@ -173,5 +172,11 @@
 
   .text__wrapper-block {
     max-width: 100%;
+  }
+  #rn1:checked ~ .container .navigation .b1:hover,
+  #rn2:checked ~ .container .navigation .b2:hover,
+  #rn3:checked ~ .container .navigation .b3:hover,
+  #rn4:checked ~ .container .navigation .b4:hover {
+    border-color: rgb(241, 13, 13);
   }
 }
