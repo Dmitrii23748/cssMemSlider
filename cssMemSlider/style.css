@@ -1,7 +1,7 @@
 .wrapper {
   padding: 0;
   background: #85e2ee;
-  font-size: 23px;
+  font-size: 2.3rem;
   overflow-x: hidden;
 }
 
@@ -9,7 +9,7 @@
   max-width: 80%;
   height: auto;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .container {
